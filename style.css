@@ -41,4 +41,106 @@ notebook/pc:
 
 /* tvoje styly sem */
 
-/* test */
+.hlavni-recept {
+    background-image:
+    radial-gradient(transparent 30%, rgb(43, 39, 39)),
+    url(images/burger.jpg);
+}
+
+.recept2 {
+    background-image:
+    radial-gradient(transparent 30%, rgb(43, 39, 39)),
+    url(images/sushi.jpg);
+    
+}
+
+.recept3 {
+    background-image:
+    radial-gradient(transparent 30%, rgb(43, 39, 39)),
+    url(images/rajcata.jpg);
+}
+
+.recept4 {
+    background-image:
+    radial-gradient(transparent 30%, rgb(43, 39, 39)),
+    url(images/kure.jpg);
+}
+
+.recept5 {
+    background-image:
+    radial-gradient(transparent 30%, rgb(43, 39, 39)),
+    url(images/grilovani.jpg);
+}
+
+
+.doporucujeme {
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+.hlavni-recept {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    min-height: 200px;
+    padding: 0.5rem;
+    margin: 1px;
+}
+
+.recept {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    background-position: center;
+    background-size: cover;
+    min-height: 90px;
+    padding: 0.5rem;
+    margin: 1px;
+}
+
+.recept-meta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Source Sans Pro';
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.hlavni-recept.recept-nazev {
+        font-family: 'Raleway';
+        font-size: 1.75rem;
+        font-weight: 800;
+}
+
+.recept.recept-nazev {
+        font-family: 'Raleway';
+        font-size: 1.2rem;
+        font-weight: 800;
+}
+
+
+@media screen and (min-width: 480px) {
+    .doporucujeme {flex-direction: row; flex-wrap: wrap;}
+    .hlavni-recept {min-height: 250px; padding: 1.25rem; flex-basis: 100%;}
+    .recept {min-height: 150px; padding: 1.25rem;}
+    .hlavni-recept.recept-nazev {font-size: 2rem;}
+    .recept.recept-nazev {font-size: 1.5rem;}
+    .sloupec {flex-direction: column; flex-basis:50%;}
+}
+
+
+@media screen and (min-width: 860px) {
+    .doporucujeme {flex-direction: row; flex-wrap: nowrap;}
+    .hlavni-recept {min-height: 400px; padding: 1.25rem;}
+    .recept {min-height: 200px; padding: 1.25rem;}
+    .hlavni-recept.recept-nazev {font-size: 3rem;}
+    .recept.recept-nazev {font-size: 1.75rem;}
+    .sloupec {flex-direction: column;}
+}
+
